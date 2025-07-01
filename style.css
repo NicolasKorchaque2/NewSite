@@ -1,0 +1,54 @@
+/* Hamburger menu styles */
+
+.menu-hamburguer {
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+    display: block;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    position: absolute;
+    top: 2.5em;
+    right: 0;
+    width: 150px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+    display: block;
+}
+
+.menu li {
+    border-bottom: 1px solid #eee;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #f0f0f0;
+}
